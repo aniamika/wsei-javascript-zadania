@@ -18,9 +18,26 @@ for (var i = 0; i < fruits.length; i++) {
     console.log(fruits[i]);
 }
 
-// 2_Tablice_2
 // 2_Tablice_3
+function printTable(array) {
+    for (var i = 0; i <= array.length; i++) {
+        console.log(array[i]);
+    }
+}
+printTable([1,2,3,4,5,6]);
+
 // 2_Tablice_4
+function multiply(array) {
+    var result = 1;
+    for(var i = 0; i < array.length; i++) {
+        result = result * array[i];
+    }
+    return result;
+}
+console.log(multiply([1,2,3,4,5,6,7]));
+console.log(multiply([1,1,1,1]));
+console.log(multiply([2,8,3,7]));
+
 // 2_Tablice_5
 // 2_Tablice_6
 // 2_Tablice_7
