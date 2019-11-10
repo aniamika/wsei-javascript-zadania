@@ -7,7 +7,6 @@ var task1Array = [
     [12, 15, 67]
 ];
 
-
 var task2Array = [
     [1, 2, 3, 4],
     [5, 6, 7, 8],
