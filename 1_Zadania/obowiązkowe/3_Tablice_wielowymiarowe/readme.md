@@ -28,7 +28,6 @@ false, // bo 1
 ];
 ```
 
-
 ### Zadanie 1 (~ 5min - 10 min)
 
 W pliku **app.js** masz tablicę o nazwie ```task1Array```. Następnie:
