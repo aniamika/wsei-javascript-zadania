@@ -80,7 +80,7 @@ console.log(getEvenAvarage([2,8,3,7,4]));
 
 // 2_Tablice_6
 function sortArray(array) {
-    
+
     var sorted = array.sort(function(a, b){return a-b});
     return sorted;
 }
@@ -88,3 +88,29 @@ function sortArray(array) {
 console.log(sortArray([145,11,3,64,4,6,10]));
 
 // 2_Tablice_7
+function addArrays(array1, array2) {
+
+    if (array1.length > array2.length) {
+       var shorter = array2;
+       var longer = array1;
+    } else {
+       var shorter = array1;
+       var longer = array2;
+    }
+
+    var result = [];
+    
+    for (var i = 0; i < shorter.length; i++) {
+       result.push(array1[i] + array2[i]);
+    }
+ 
+    for (var j = shorter.length; j < longer.length; j++) {
+       result.push(longer[j]);
+    }
+
+    return result;
+}
+
+console.log(addArrays([4,0,1,3,4], [1,9,6,7,8,17]));
+console.log(addArrays([8,3,22], [1,3,2]));
+console.log(addArrays([2,3,1,5,3,5], [3,1,76,1]));
