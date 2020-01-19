@@ -42,6 +42,14 @@ document.addEventListener("DOMContentLoaded", function () {
     ulBlocks.outerHTML = "new string instead of blocks list";
 
     // 9_DOM_Element_Zadanie_3
+    let mainFooter = document.querySelector("#mainFooter");
+
+    function getId(element) {
+        let id = element.getAttribute('id');
+        console.log(id);
+        return id;
+    }
+    getId(mainFooter);
 
     // 9_DOM_Element_Zadanie_4
     function getTags(elements) {
