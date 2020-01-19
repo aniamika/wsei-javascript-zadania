@@ -59,5 +59,24 @@ console.log(multiply([1,1,1,1]));
 console.log(multiply([2,8,3,7]));
 
 // 2_Tablice_5
+function getEvenAvarage(array) {
+    var temp = 0;
+    var counter = 0;
+    
+    for(var i = 0; i < array.length; i++){
+      if(array[i] % 2 === 0) {
+        temp += array[i];
+        counter++;
+      }
+    }
+
+    if(counter === 0 ) return null;
+    return temp/counter;
+}
+
+console.log(getEvenAvarage([1,2,3,4,5,6,7]));
+console.log(getEvenAvarage([1,1,1,1]));
+console.log(getEvenAvarage([2,8,3,7,4]));
+
 // 2_Tablice_6
 // 2_Tablice_7
