@@ -1,4 +1,24 @@
 // 2_Tablice_0
+function distFromAvarage(array) {
+    var sum = 0;
+    var result = [];
+ 
+    for (var i = 0; i < array.length; i++) {
+      sum = sum + array[i];
+    }
+ 
+    var avg = sum / array.length;
+ 
+    for (var j = 0; j < array.length; j++) {
+       result.push( Math.abs(array[j] - avg) );
+    }
+
+    return result;
+ }
+ 
+ console.log(distFromAvarage([1,2,3,4,5,6,7]));
+ console.log(distFromAvarage([1,1,1,1]));
+ console.log(distFromAvarage([2,8,3,7]));
 
 // 2_Tablice_1
 var fruits = ['banana', 'orange', 'apple', 'peach'];
