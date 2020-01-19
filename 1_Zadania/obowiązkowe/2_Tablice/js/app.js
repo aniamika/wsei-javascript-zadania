@@ -62,7 +62,7 @@ console.log(multiply([2,8,3,7]));
 function getEvenAvarage(array) {
     var temp = 0;
     var counter = 0;
-    
+
     for(var i = 0; i < array.length; i++){
       if(array[i] % 2 === 0) {
         temp += array[i];
@@ -79,4 +79,12 @@ console.log(getEvenAvarage([1,1,1,1]));
 console.log(getEvenAvarage([2,8,3,7,4]));
 
 // 2_Tablice_6
+function sortArray(array) {
+    
+    var sorted = array.sort(function(a, b){return a-b});
+    return sorted;
+}
+ 
+console.log(sortArray([145,11,3,64,4,6,10]));
+
 // 2_Tablice_7
