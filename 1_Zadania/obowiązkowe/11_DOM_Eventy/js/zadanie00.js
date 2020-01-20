@@ -10,7 +10,7 @@ for(let i = 0; i < parents.length; i++) {
     }) 
 }
 
-// 12_DOM_Eventy_0b
+// 11_DOM_Eventy_0b
 for (var j = 0; j < parents.length; j++) {
     parents[j].addEventListener("mouseout", function() {
         var parent = this;
