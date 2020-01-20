@@ -1,5 +1,32 @@
-// 4_Obiekty_1
+// 4_Obiekty_0a
+let city = {
+    capital: "Sopot",
+    population: 30000,
+    president: "Kowalski Jerzy",
+    primeMinisters: ["Kuba", "Maciek", "Adam"],
+}
 
+console.log(
+    city.capital,
+    city.population,
+    city.president,
+    city.primeMinisters
+);
+
+// 4_Obiekty_0b
+let timeMachine = {
+    shape: "circle",
+    model: "6543",
+    run: function run(date, place) {
+        console.log("You moved to:", date, place);
+    }
+}
+
+console.log(timeMachine.shape);
+console.log(timeMachine.model);
+console.log(timeMachine.run('3 luty 1870', 'Malaga'));
+
+// 4_Obiekty_1
 var book = {
     title: "Lalka",
     author: "Bolek Prus",
