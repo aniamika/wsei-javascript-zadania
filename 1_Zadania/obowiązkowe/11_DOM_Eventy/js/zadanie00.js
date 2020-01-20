@@ -11,10 +11,14 @@ for(let i = 0; i < parents.length; i++) {
 }
 
 // 12_DOM_Eventy_0b
-parent.addEventListener("nazwaEventu", function() {
+for (var j = 0; j < parents.length; j++) {
+    parents[j].addEventListener("mouseout", function() {
+        var parent = this;
 
-    function hideChildrenElement(){
+        function hideChildrenElement(parent){
+            parent.querySelector('.children').style.display = 'none';
+        }
 
-    }
-
-})
+        hideChildrenElement(parent);
+    });
+}
