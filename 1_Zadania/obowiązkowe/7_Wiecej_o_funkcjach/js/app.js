@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+// tworzymy funkcje jeden - scope jeden
 function jeden() {
 
-    //Twoj komentarz ...
+    // tworzymy zmienną zmienna1 w funkcji jeden
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    // tworzymy kolejną funkcje - dwa - i kolejny scope dwa
     function dwa() {
 
-        //Twoj komentarz ...
+        // w tej funkcji dwa nie ma zmiennej jeden więc szukamy wyżej w scope jeden czy ją znajdziemy i znajdujemy
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        // tworzymy zmienna2 w funkcji dwa - jej scope to scope dwa
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    // wywolujemy funkcje dwa
     dwa();
 
-    //Twoj komentarz ...
+    // VM338:21 Uncaught ReferenceError: zmienna2 is not defined - otrzymujemy taki bład poniewaz zmienna2  jest w srodku funkcji dwa i nie mamy do niej dostepu
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+// wywołanie funkcji jeden
 jeden()
