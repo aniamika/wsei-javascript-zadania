@@ -1,3 +1,4 @@
+// 11_DOM_Eventy_1
 var menu = document.querySelector("#menu");
 var paragraf = document.querySelector("p");
 
