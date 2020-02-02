@@ -1,3 +1,4 @@
+// 11_DOM_Eventy_9
 document.addEventListener("DOMContentLoaded", function () {
   var a = document.getElementById("a");
   var b = document.getElementById("b");

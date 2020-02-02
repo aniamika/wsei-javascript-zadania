@@ -1,3 +1,5 @@
+// 5_this_2
+
 var calculator = {
     save: function (newA, newB) {
         this.a = newA;

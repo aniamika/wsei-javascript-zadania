@@ -1,4 +1,4 @@
-
+// 2_Tablice_2
 function createArray(number) {
     var newArray = [];
 
