@@ -17,12 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("b: ", this);
 
 
-    function innerFuncOne() {
+    function innerFuncOne(currentTarget) {
       // Tutaj this wskazuje na element Window, bo funkcja została
       //wywołana bez żadnego kontekstu.
-      console.log("innerFuncOne: ", this);
+      console.log("innerFuncOne: ", currentTarget);
+      //mamy już current target więc możemy zmienić kolor
     }
-    innerFuncOne();
+    innerFuncOne(event.currentTarget);
 
   });
 
