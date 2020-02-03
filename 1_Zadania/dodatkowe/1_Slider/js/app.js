@@ -1,21 +1,33 @@
+// Zadanie 1_Slider
 document.addEventListener('DOMContentLoaded', function () {
-
+    // console.log("Działa");
     let next = document.querySelector('#nextPicture');
+    // console.log(next);
     let prev = document.querySelector('#prevPicture');
-    
+    // console.log(prev);
     let lis = document.querySelectorAll('li');
-    let photoIndex = 0;
-    var allLi = [];
+    // console.log(lis);
 
-    for(var i = 0; i < lis.length; i++) {
-        allLi.push(lis[i]);
-    }
+    let index = 0;
 
-    lis[0].className = 'visible';
+    lis[index].className = 'visible';
 
     next.addEventListener('click', function() {
-        
-        allLi = allLi + 1;
+        lis[index].classList.remove('visible');
+        index = index + 1;
+        if(index >= lis.length) {
+            index = 0;
+        }
+        lis[index].classList.add('visible');
+    });
+
+    prev.addEventListener('click', function() {
+        lis[index].classList.remove('visible');
+        index = index - 1;
+        if(index < 0) {
+            index = lis.length -1;
+        }
+        lis[index].classList.add('visible');
     });
 
 
