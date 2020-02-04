@@ -1,30 +1,24 @@
-// 4_Menu
-
+// Zadanie 4_Menu
 document.addEventListener('DOMContentLoaded', function () {
 
-    let lis = document.querySelectorAll('ul li');
+    let lis = document.querySelectorAll('ul li');   
 
     for (let i = 0; i < lis.length; i++) {
 
         lis[i].addEventListener('mouseover', function(){
-            // let secondList = this.querySelector('ul');
-            // if ( hiddenList !== null){
-            //     hiddenList.style.display = "inline-block";
-            // }
-            console.log('element');
+            let secondList = this.querySelector('ul');
+            if ( secondList !== null){
+                secondList.style.display = "block";
+            }
         })
+
+        lis[i].addEventListener('mouseout', function(){
+            var secondList = this.querySelector('ul');
+            if ( secondList !== null) {
+                secondList.style.display = "none";
+            }
+        })
+
     }
-
-    // for (var i = 0; i < lis.length; i++) {
-    //     lis[i].addEventListener('mouseout', function(){
-    //         var secondList = this.querySelector('ul');
-    //         // if ( hiddenList !== null) {
-    //         //     hiddenList.style.display = "none";
-    //         // }
-    //         console.log(secondList);
-    //     })
-    // }
-
-
 
 });
