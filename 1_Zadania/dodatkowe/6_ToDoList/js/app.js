@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
             alert("zadanie za długie");
         } else {
             addTask();
+            
             // 6_ToDoList_7
             counter.innerHTML = numberOfTasks + 1;
             // 6_ToDoList_6
